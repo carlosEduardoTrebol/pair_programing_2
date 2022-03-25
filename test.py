@@ -18,3 +18,7 @@ class FibonacciShould(unittest.TestCase):
         letter = main.Roman_Numbers().roman_number_transform_to_decimal(number)
         self.assertEqual(letter, "iii")
 
+    def test_returns_iv_if_number_4(self):
+        number=4
+        letter = main.Roman_Numbers().roman_number_transform_to_decimal(number)
+        self.assertEqual(letter, "iv")
